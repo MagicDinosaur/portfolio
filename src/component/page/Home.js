@@ -38,8 +38,8 @@ export default function Home() {
 
                                     <div className="link-primary-wrapper">
                                         <div className="link-primary-text"
-                                             style={{'font-weight': 'normal', 'font-size': '80%'}}> You can find source
-                                            code of this website in <a href="https://github.com/MagicDinosaur/portfolio"
+                                             style={{'font-weight': 'normal', 'font-size': '80%'}}> This web site is written in React.Js. You can find source
+                                            code of it in <a href="https://github.com/MagicDinosaur/portfolio"
                                                                        className="link-primary w-inline-block"><strong>here</strong></a>
                                         </div>
                                     </div>
