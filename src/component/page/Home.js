@@ -97,12 +97,14 @@ export default function Home() {
                                 ))
                             }
                         </div>
+
                     </div>
                 </div>
             </div>
             <div className="container-default w-container">
                 <div className="divider"></div>
             </div>
+
 
             <div className="section wf-section">
                 <div className="container-default w-container"><h2 className="title social-profiles">Follow me on social
@@ -120,6 +122,7 @@ export default function Home() {
                                 </a>
                             ))
                         }
+
                     </div>
                 </div>
             </div>
@@ -127,3 +130,6 @@ export default function Home() {
         </div>
     );
 }
+
+
+
