@@ -20,7 +20,7 @@ export default function Home() {
                         <div className="split-content home-hero-left">
                             <h1>Hello, I am {useMyInfo.name}</h1>
                             <p className="paragraph home-hero">An aspiring computer science student inquisitive about
-                                the limitless world of technology</p>
+                                the limitless world of technology. Thank you for comming!</p>
                             {/*<a href={useMyInfo.socialNetwork[useMyInfo.contactSocialNetwork]} target={'_blank'}*/}
                             {/*   className="link-primary w-inline-block">*/}
                             <div>
