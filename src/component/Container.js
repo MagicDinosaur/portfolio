@@ -1,6 +1,6 @@
 import {useRecoilState} from "recoil";
 import React, {useEffect} from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 
 import Home from './page/Home'
 import Projects from './page/Projects'
@@ -23,9 +23,9 @@ export default function Container() {
                                                                     aria-current="page"
                                                                     className="nav-link w--current">Home</a>
                                 </li>
-                                <li className="nav-item-wrapper"><a href="/projects" className="nav-link">Projects</a>
+                                <li className="nav-item-wrapper"><Link to="/projects" className="nav-link">Projects</Link>
                                 </li>
-                                <li className="nav-item-wrapper"><a href="about" className="nav-link"> More Info</a>
+                                <li className="nav-item-wrapper"><Link to="/about" className="nav-link"> More Info</Link>
                                 </li>
                             </ul>
                         </nav>
