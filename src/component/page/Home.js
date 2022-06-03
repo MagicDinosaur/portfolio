@@ -19,28 +19,31 @@ export default function Home() {
                     <div className="home-hero-wrapper">
                         <div className="split-content home-hero-left">
                             <h1>Hello, I am {useMyInfo.name}</h1>
-                            <p className="paragraph home-hero">An aspiring computer science student inquisitive about the limitless world of technology</p>
+                            <p className="paragraph home-hero">An aspiring computer science student inquisitive about
+                                the limitless world of technology</p>
                             {/*<a href={useMyInfo.socialNetwork[useMyInfo.contactSocialNetwork]} target={'_blank'}*/}
                             {/*   className="link-primary w-inline-block">*/}
-<div>
-                            <a href= {useMyInfo.socialNetwork["LinkedIn"]}
-                               className="link-primary w-inline-block">
-                                <div className="link-primary-wrapper">
-                                    <div className="link-primary-text">Contact me on Linkedin
-                                        {useMyInfo.contactSocialNetwork}</div>
-                                    <div className="link-primary-text-arrow"><span
-                                        className="link-primary-arrow"></span>
-                                    </div>
-                                </div>
-                            </a></div>
                             <div>
-                            <a href= "https://github.com/MagicDinosaur/personal_portfolio"
-                               className="link-primary w-inline-block">
-                                <div className="link-primary-wrapper">
-                                    <div className="link-primary-text" style={{'font-weight': 'normal', 'font-size': '80%'}}> You can find source code of this website in <strong>here</strong>
+                                <a href={useMyInfo.socialNetwork["LinkedIn"]}
+                                   className="link-primary w-inline-block">
+                                    <div className="link-primary-wrapper">
+                                        <div className="link-primary-text">Contact me on Linkedin
+                                            {useMyInfo.contactSocialNetwork}</div>
+                                        <div className="link-primary-text-arrow"><span
+                                            className="link-primary-arrow"></span>
                                         </div>
-                                </div>
-                            </a>
+                                    </div>
+                                </a></div>
+                            <div>
+
+                                    <div className="link-primary-wrapper">
+                                        <div className="link-primary-text"
+                                             style={{'font-weight': 'normal', 'font-size': '80%'}}> You can find source
+                                            code of this website in <a href="https://github.com/MagicDinosaur/portfolio"
+                                                                       className="link-primary w-inline-block"><strong>here</strong></a>
+                                        </div>
+                                    </div>
+
                             </div>
 
                         </div>
