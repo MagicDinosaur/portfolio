@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: sans-serif
+}
+
+.container-header {
+    padding: 20px 24px;
+}
+
+.header-navigation {
+    margin-left: 0px;
+}
+
+.link-primary-arrow {
+    left: 6px;
+}
