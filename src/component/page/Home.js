@@ -104,7 +104,6 @@ export default function Home() {
                 <div className="divider"></div>
             </div>
 
-
             <div className="section wf-section">
                 <div className="container-default w-container"><h2 className="title social-profiles">Follow me on social
                     network</h2>
