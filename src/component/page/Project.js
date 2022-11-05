@@ -79,7 +79,7 @@ export default function Project() {
                         {useItem.result && (
                             <div>
                                 <div className="divider portfolio-divider-2"></div>
-                                <h2>Technique usages</h2>
+                                <h2>Tech stack</h2>
                                 <div className="rich-text w-richtext"><p>{useItem.result.description}</p>
                                     <ul role="list">
                                         {
