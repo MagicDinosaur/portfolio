@@ -9,6 +9,6 @@ export const info = atom({
             'LinkedIn': 'https://www.linkedin.com/in/duc-pham-51804721b/',
             'Github': 'https://github.com/MagicDinosaur',
             'Email': 'mailto: phamvietduc@gmail.com'
-        }
+        } 
     },
 });

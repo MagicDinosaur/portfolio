@@ -94,7 +94,7 @@ export default function Home() {
                                             {/*<div className="card-portfolio-project-client">{usePortfolioProject[item].name}</div>*/}
                                             <h3 className="title card-portfolio-project">{usePortfolioProject[item].name}</h3>
 
-                                            <p>{usePortfolioProject[item].description}</p>
+                                            <p style={{"max-width": "40ch"}}>{usePortfolioProject[item].description}</p>
                                         </Link>
                                     </div>
                                 ))

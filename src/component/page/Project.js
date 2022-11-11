@@ -13,6 +13,7 @@ export default function Project() {
 
     return (
         <div>
+            
             {useItem ? (
                 <div className="section portfolio-page wf-section">
                     <div className="container-medium-768px">
@@ -31,8 +32,9 @@ export default function Project() {
                         <div className="top-content portfolio-top-content" style={{display: 'block'}}>
                             <div className="split-content portfolio-left"><img
                                 src={useItem.logo} class={'image portfolio-project-icon'}/><h1
-                                className="title portfolio-project-title">{useItem.name}</h1><p
-                                className="paragraph portfolio-project-summary">{useItem.description}</p></div>
+                                className="title portfolio-project-title">{useItem.name}</h1><div
+                                className="paragraph portfolio-project-summary">{useItem.description}</div></div>
+
                         </div>
                         <div className="w-layout-grid portfolio-project-about-grid">
                             <div className="portfolio-project-about-wrapper">
@@ -62,13 +64,13 @@ export default function Project() {
                             <div>
                                 <div className="divider portfolio-divider-1"></div>
                                 <h2>Overview</h2>
-                                <div className="rich-text w-richtext"><p>{useItem.overview.description}</p>
+                                <div id = "graph1" className="rich-text w-richtext"><p>{useItem.overview.description()}</p>
                                     {
                                         useItem.overview.image.map(item => (
                                             <figure style={{maxWidth: '1438px'}}
                                                     className="w-richtext-align-fullwidth w-richtext-figure-type-image">
                                                 <div><img
-                                                    src={item}/></div>
+                                                    src={item}/></div> 
                                             </figure>
                                         ))
                                     }
@@ -80,7 +82,10 @@ export default function Project() {
                             <div>
                                 <div className="divider portfolio-divider-2"></div>
                                 <h2>Tech stack</h2>
-                                <div className="rich-text w-richtext"><p>{useItem.result.description}</p>
+                                <div className="rich-text w-richtext">
+                               
+
+                                    <p>{useItem.result.description}</p>
                                     <ul role="list">
                                         {
                                             useItem.result.list.map(item => (
