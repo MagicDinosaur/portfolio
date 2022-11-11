@@ -3,10 +3,8 @@
 function Gooly() {
     return (
         <p>
-            <div id="top"></div>
-
-            <br />
-            <div align="center">
+            <br/>
+            <div id = "top "align="center">
                 <h2 align="center">Gooly</h2>
                 <p align="center">
                     A Google-based searching bar
