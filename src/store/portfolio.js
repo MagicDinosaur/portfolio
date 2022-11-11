@@ -1,6 +1,7 @@
 import {atom} from 'recoil';
 import Gooly from './projects/gooly';
 import MyMuse from './projects/mymuse';
+import Dyhac from './projects/dyhac';
 export const project = atom({
     key: 'project',
     default: {
@@ -71,7 +72,7 @@ export const project = atom({
             'service': 'https://github.com/MagicDinosaur/Dyhac',
             'type': 'Software',
             'overview': {
-                'description': 'A platform that helps increase the productivity and connection between the speakers and the audience of the seminars. Readers can submit their questions instantly (publicly or anonymously) right at the speaker conference.',
+                'description': Dyhac,
                 'image': [
                     '',
                 ]
