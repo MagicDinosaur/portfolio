@@ -1,4 +1,4 @@
-# My personal portfolio site (written in reactjs, deployed on Netify)
+# My personal portfolio site (written in reactjs, deployed on Netlify)
  
 phamvietduc.com
 
