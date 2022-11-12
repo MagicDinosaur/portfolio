@@ -18,11 +18,12 @@ export default function Home() {
                 <div className="container-default w-container">
                     <div className="home-hero-wrapper">
                         <div className="split-content home-hero-left">
-                            <h1>Hello, I am {useMyInfo.name}</h1>
-                            <p className="paragraph home-hero">An aspiring computer science student inquisitive about
-                                the limitless world of technology. Thank you for coming!</p>
-                            {/*<a href={useMyInfo.socialNetwork[useMyInfo.contactSocialNetwork]} target={'_blank'}*/}
-                            {/*   className="link-primary w-inline-block">*/}
+                            <h1>Hello there, I am {useMyInfo.name}</h1>
+                            <p >An aspiring computer science student inquisitive about
+                                the limitless world of technology. Having a firm understanding of programming languages, mathematics, machine learning terminology. 
+                                Motivated to learn, grow and excel in the major.</p><br></br>
+                                <p>Thank you for coming to my page!</p><br></br>
+
                             <div>
                                 <a href={useMyInfo.socialNetwork["LinkedIn"]}
                                    className="link-primary w-inline-block">
