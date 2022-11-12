@@ -9,6 +9,20 @@ export const info = atom({
             'LinkedIn': 'https://www.linkedin.com/in/duc-pham-51804721b/',
             'Github': 'https://github.com/MagicDinosaur',
             'Email': 'mailto: phamvietduc@gmail.com'
-        } 
+        },
+        'skills':{
+            'Python': "devicon-python-plain colored",
+            'Java': 'devicon-java-plain colored',
+            'Go': 'devicon-go-plain colored',
+            'React': 'devicon-react-original colored',
+            'HTML': 'devicon-html5-plain colored',
+            'CSS': 'devicon-css3-plain colored',
+            'JavaScript': 'devicon-javascript-plain colored',
+            'MySQL': 'devicon-mysql-plain colored',
+            'MongoDB': 'devicon-mongodb-plain colored',
+            'Redis': 'devicon-redis-plain colored',
+            'Git': 'devicon-git-plain colored',
+            'Docker': 'devicon-docker-plain colored',
+        }
     },
 });

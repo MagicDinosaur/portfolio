@@ -4270,11 +4270,13 @@ figcaption {
   grid-column-gap: 23px;
   grid-row-gap: 49px;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
-
+.skill-wrapper{
+  margin: auto;
+}
 .social-profiles-grid {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;

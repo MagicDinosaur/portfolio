@@ -108,6 +108,33 @@ export default function Home() {
                 <div className="divider"></div>
             </div>
 
+            <div class="section wf-section">
+      <div class="container-default w-container">
+        <h2 class="title skills">My tech stack</h2>
+        <div class="w-layout-grid skills-grid">
+          {
+                            Object.keys(useMyInfo.skills).map(name => (
+                                <div class="skill-wrapper">
+                                <i style = {{"font-size": "400%"}} class={useMyInfo.skills[name]}></i>
+                                <p style = {{"text-align": "center"}} class="title skill">
+                                 {name}
+                              </p>
+                              </div>
+                            ))
+                        }
+        
+        </div>
+      </div>
+            </div>
+
+
+
+
+
+            <div className="container-default w-container">
+                <div className="divider"></div>
+            </div>
+
 
             <div className="section wf-section">
                 <div className="container-default w-container"><h2 className="title social-profiles">Follow me on social
