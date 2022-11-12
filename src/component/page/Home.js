@@ -142,10 +142,11 @@ export default function Home() {
                     <div className="w-layout-grid social-profiles-grid">
                         {
                             Object.keys(useMyInfo.socialNetwork).map(name => (
-                                <a href={useMyInfo.socialNetwork[name]}
+                                <a href={useMyInfo.socialNetwork[name][0]}
                                    target="_blank" className="link-primary w-inline-block">
                                     <div className="link-primary-wrapper">
-                                        <div className="link-primary-text">{name}</div>
+                                    <i class={useMyInfo.socialNetwork[name][1]} style ={{"font-size": "400%"}}></i>
+                                        
                                         <div className="link-primary-text-arrow"><span
                                             className="link-primary-arrow"></span></div>
                                     </div>

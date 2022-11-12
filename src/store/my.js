@@ -6,9 +6,9 @@ export const info = atom({
         'name': 'Duc',
         'contactSocialNetwork': '',
         'socialNetwork': {
-            'LinkedIn': 'https://www.linkedin.com/in/duc-pham-51804721b/',
-            'Github': 'https://github.com/MagicDinosaur',
-            'Email': 'mailto: phamvietduc@gmail.com'
+            'LinkedIn': ['https://www.linkedin.com/in/duc-pham-51804721b/','devicon-linkedin-plain-wordmark'],
+            'Github': ['https://github.com/MagicDinosaur','devicon-github-original-wordmark'],
+            'Email': ['mailto: phamvietduc@gmail.com','devicon-google-plain'],
         },
         'skills':{
             'Python': "devicon-python-plain colored",
