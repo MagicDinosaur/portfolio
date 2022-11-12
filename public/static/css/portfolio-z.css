@@ -2475,6 +2475,7 @@
 }
 
 @media screen and (max-width: 479px) {
+
   .w-commerce-commercecartcontainerwrapper--cartType-modal {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6604,6 +6605,7 @@ figcaption {
 @media screen and (max-width: 479px) {
   label {
     margin-bottom: 20px;
+
   }
 
   blockquote {
@@ -7012,13 +7014,13 @@ figcaption {
   .skills-grid {
     grid-row-gap: 30px;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .social-profiles-grid {
     grid-row-gap: 30px;
     -ms-grid-columns: auto;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .blog-title-wrapper {
