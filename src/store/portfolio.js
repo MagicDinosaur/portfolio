@@ -8,7 +8,7 @@ export const project = atom({
         'Gooly': {
             'name': 'Gooly',
             'position': '',
-            'description': 'A google-base searching tool with automated data crawling from dynamic websites',
+            'description': 'A google-based searching tool with automated data crawling from dynamic websites',
             'logo': 'https://cdn-icons-png.flaticon.com/512/122/122932.png',
             'link': {
                 'text': 'View source',
@@ -34,7 +34,7 @@ export const project = atom({
         'MyMuse': {
             'name': 'MyMuse',
             'position': '',
-            'description': 'A memory web game allowing users to follow the pattern to gain, save score, login, register and update personal information. Won 1st prize against 43 others product competitors.',
+            'description': 'A memory web game allowing users to follow the pattern to gain, save score, login, register and update personal information. Won 1st prize against 43 other product competitors.',
             'logo': 'https://img.freepik.com/premium-vector/cute-white-cat-cartoon-vector-illustration_42750-808.jpg',
             'link': {
                 'text': 'View source',
@@ -60,7 +60,7 @@ export const project = atom({
         'Dyhac': {
             'name': 'Dyhac',
             'position': '',
-            'description': 'Conferences supporting platform, enhance the connection between the speakers and the audience.',
+            'description': 'Conference-supporting platform, helping to enhance the connection between the speakers and their audience.',
             'logo': 'https://www.nicepng.com/png/full/126-1269636_conference-presentation-comments-presentation-icon-png.png',
             'link': {
                 'text': 'View source',

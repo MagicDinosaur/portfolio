@@ -21,8 +21,10 @@ style={{ "margin": "auto", "display":"block"}}></img><br/>
 The game is a simple game that you need to follow the pattern to gain a score. The pattern is a series of notes, each note is a different images and sounds. The game will start with a random pattern, and you need to repeat it to gain a score. The score will be saved and displayed in the "Account tab." To do so, you first need to create an account. If you already have an account, you can login in "Log In." tab.
 I want to make a website that can showcase programming and logic skills, and have the opportunity to expand in the future . 
 Therefore, a webgame is a suitable choice. hehe. I aslo want to show a bit about my personality. Shy, chill, and calm. <br/>
-Basically, I used Javascript, MySQL,HTML, CSS, Git, Heroku to develope this game. The chalenges I faced are come from tricky tasks such as: handling the game timer logic, display the information, ranking, and the security of the website. You might need to check the suitable version of languagues if you want to try to run the code (which i would love you if you don't) to see how it works.
-In the future, I might add some feature to this game, such as:<br/>
+Basically, I used Javascript, MySQL,HTML, CSS, Git, Heroku to develop this game. The challenges I faced are came from tricky tasks such as: 
+handling the game timer logic, displaying the information, ranking, 
+and ensuring the security of the website. You might need to check the suitable version of languagues if you want to try to run the code (which i would love you if you don't) to see how it works.
+In the future, I might add some features to this game, such as:<br/>
 - Add "Forgot password" function<br/>
 - Allow user to modify their information<br/>
 - Enhance user experience tab<br/>

@@ -12,7 +12,7 @@ function Gooly() {
                 </p>
             </div>
             <h5>Overview</h5>
-            Gooly is a google-clone search bar with support crawling tool from back-end.  Here is the firstlook:<br />
+            Gooly is a google-clone search bar which supports crawling tool from back-end.  Here is the firstlook:<br />
 
             <img src="https://user-images.githubusercontent.com/94766118/176983549-dde0d2e9-3f8a-4ba7-9e13-703558f1bcf2.gif"
                 style={{ "margin": "auto", "display": "block" }}></img><br />
@@ -20,7 +20,7 @@ function Gooly() {
 
 
 
-            Behind the project is a tool that collects data from public websites and insert to the MySQL database. Here is how it looks:
+            Behind the project is a tool that collects data from public websites and inserts into the MySQL database. Here is how it looks:
 
             <img src="https://user-images.githubusercontent.com/94766118/176984743-281e9382-dd94-48c3-8a0c-af7fcf12f67f.gif"
                 style={{ "margin": "auto", "display": "block" }}></img><br />
@@ -48,7 +48,7 @@ function Gooly() {
             <p>
                 During my exposure to web programming, I noticed that most websites, especially electronic information sites, adhere to a common standard, in order to increase the number of vistors.
                 When inspecting information from these pages, we see the presence of html <b>"meta"</b> tags. These tags will cover the general content of the website such as title, subject image, topic, etc.
-                For example, when I inspect the homepage of Cnet and The Verge, we could se that there are some similiar in naming html tags such as
+                For example, when I inspect the homepage of Cnet and The Verge, we could see that there are some similarities in naming html tags such as
                 "og:site_name", "og:description",,...
             </p><br />
 
@@ -61,7 +61,7 @@ function Gooly() {
             <p style={{ "textAlign": "center" }}>Inspecting data from the Verge HTML meta tag
             </p><br />
 
-            With that ideas in mind, I started developing a tool that could recursively call in the meta tags and anchor tags of public websites, and collect the data into the database. The collected data is served to search engines.
+            With that idea in mind, I started developing a tool that could recursively call in the meta tags and anchor tags of public websites, and collect the data into the database. The collected data is served to search engines.
 
 
 
