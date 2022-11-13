@@ -9,7 +9,7 @@ export const project = atom({
             'name': 'Gooly',
             'position': '',
             'description': 'A google-based searching tool with automated data crawling from dynamic websites',
-            'logo': 'https://cdn-icons-png.flaticon.com/512/122/122932.png',
+            'logo': 'https://www.aictitle.com/assets/images/technology.gif',
             'link': {
                 'text': 'View source',
                 'url': 'https://gooly.phamvietduc.com/',
@@ -35,7 +35,7 @@ export const project = atom({
             'name': 'MyMuse',
             'position': '',
             'description': 'A memory web game allowing users to follow the pattern to gain, save score, login, register and update personal information. Won 1st prize against 43 other product competitors.',
-            'logo': 'https://img.freepik.com/premium-vector/cute-white-cat-cartoon-vector-illustration_42750-808.jpg',
+            'logo': 'https://media.tenor.com/QWAo2echlVEAAAAC/cute.gif',
             'link': {
                 'text': 'View source',
                 'url': 'https://my-muse01.herokuapp.com/index.php',
