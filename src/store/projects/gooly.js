@@ -1,13 +1,24 @@
 
 
 function Gooly() {
+    const techs = {
+        'Python': "devicon-python-plain colored",
+        'React': 'devicon-react-original colored',
+        'HTML': 'devicon-html5-plain colored',
+        'CSS': 'devicon-css3-plain colored',
+        'JavaScript': 'devicon-javascript-plain colored',
+        'MySQL': 'devicon-mysql-plain colored',
+        'Git': 'devicon-git-plain colored',
+        'Django': 'devicon-django-plain colored',
+        'Docker': 'devicon-docker-plain colored',
+    }
     return (
         <p>
             <br/>
             <div id = "top "align="center">
                 <h2 align="center">Gooly</h2>
                 <p align="center">
-                    A Google-based searching bar
+                    A Google-based search engines 
                     You can try it on here : http://gooly.phamvietduc.com
                 </p>
             </div>
@@ -30,17 +41,7 @@ function Gooly() {
             <img src="https://user-images.githubusercontent.com/94766118/176984831-69761b9a-e69f-47e9-aeff-4b32df683fce.png"
                 style={{ "margin": "auto", "display": "block" }}></img><br />
 
-            <h5>
-                Tech stack
-            </h5>
 
-
-            <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a> <br />
-            <a href="https://reactjs.org/" rel="nofollow">React</a><br />
-            <a href="https://jquery.com" rel="nofollow">Node.js</a><br />
-
-            <a href="https://django.com" rel="nofollow">Django</a><br />
-            <a href="https://www.mysql.com" rel="nofollow">MySQL</a><br /><br />
 
             <h5>The idea of making this project
             </h5>
@@ -59,14 +60,25 @@ function Gooly() {
             <img src="https://user-images.githubusercontent.com/94766118/176985604-7125a04a-5594-49f4-a403-c70b87fbba0b.png"
                 style={{ "margin": "auto", "display": "block" }}></img><br />
             <p style={{ "textAlign": "center" }}>Inspecting data from the Verge HTML meta tag
-            </p><br />
+            </p>
 
             With that idea in mind, I started developing a tool that could recursively call in the meta tags and anchor tags of public websites, and collect the data into the database. The collected data is served to search engines.
+            <br /><br />
+            <h5> Tech Stack</h5>
 
+            <div class="w-layout-grid skills-grid">
+                        {
+                            Object.keys(techs).map(name => (
+                                <div class="skill-wrapper">
+                                    <i style={{ "font-size": "400%" }} class={techs[name]}></i>
+                                    <p style={{ "text-align": "center" }} class="title skill">
+                                        {name}
+                                    </p>
+                                </div>
+                            ))
+                        }
 
-
-            <p align="right">(<a href="#top">back to top</a>)</p>
-
+                    </div>
 
 
 

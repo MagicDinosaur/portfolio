@@ -2,14 +2,41 @@ import {atom} from 'recoil';
 import Gooly from './projects/gooly';
 import MyMuse from './projects/mymuse';
 import Dyhac from './projects/dyhac';
+import Attend from './projects/attend';
 export const project = atom({
     key: 'project',
-    default: {
+    default: {        
+        'Attendance System': {
+        'name': 'Attendance System',
+        'position': 'Team Leader',
+        'description': 'A realtime seat selection web application for students across the school. ',
+        'logo': 'https://i.imgur.com/fehPFcg.gif',
+        'link': {
+            'text': '',
+            'url': '',  
+            'git' : '',
+        },
+        'date': '2022',
+        'service': 'https://github.com/MagicDinosaur/Goooly',
+        'type': 'Software','overview': {
+            'description': Attend,
+            'image': [
+                '',
+
+            ]
+        },
+        'result': {
+            'description': 'Python Flask, SQLlite, HTML5, CSS, JavaScript, React',
+            'list': [
+
+            ]
+        }
+    },
         'Gooly': {
             'name': 'Gooly',
             'position': '',
             'description': 'A google-based searching tool with automated data crawling from dynamic websites',
-            'logo': 'https://www.aictitle.com/assets/images/technology.gif',
+            'logo': 'https://i.imgur.com/14fQQIX.gif',
             'link': {
                 'text': 'View source',
                 'url': 'https://gooly.phamvietduc.com/',
@@ -35,7 +62,7 @@ export const project = atom({
             'name': 'MyMuse',
             'position': '',
             'description': 'A memory web game allowing users to follow the pattern to gain, save score, login, register and update personal information. Won 1st prize against 43 other product competitors.',
-            'logo': 'https://media.tenor.com/QWAo2echlVEAAAAC/cute.gif',
+            'logo': 'https://i.imgur.com/Ym7aquc.gif',
             'link': {
                 'text': 'View source',
                 'url': 'https://my-muse01.herokuapp.com/index.php',

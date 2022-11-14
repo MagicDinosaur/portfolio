@@ -1,5 +1,16 @@
 
 function MyMuse() {
+
+    const techs = {
+        'PHP': 'devicon-php-plain colored',
+        'React': 'devicon-react-original colored',
+        'HTML': 'devicon-html5-plain colored',
+        'CSS': 'devicon-css3-plain colored',
+        'JavaScript': 'devicon-javascript-plain colored',
+        'MySQL': 'devicon-mysql-plain colored',
+        'Git': 'devicon-git-plain colored',
+        'Heroku': 'devicon-heroku-original colored',
+    }
     return (
         <p id="top">
             <div align="center">
@@ -44,12 +55,21 @@ function MyMuse() {
             <h5>
                 Tech stack
             </h5>
-            🐾 Database Usage: MySQL for manage user's accounts and scores. You can login, save score, view score, or register new account<br />
-            🐾 Ajax usage: For handling sending score task (your score will be sent to database if you lose and the game over).
-            Login and check "Account" tab to try it<br />
-            🐾 Responsive: Yes! the website is responsive. You can try it on your phone or tablet.<br />
-            🐾 JavaScript<br /><br />
+         
 
+            <div class="w-layout-grid skills-grid">
+                        {
+                            Object.keys(techs).map(name => (
+                                <div class="skill-wrapper">
+                                    <i style={{ "font-size": "400%" }} class={techs[name]}></i>
+                                    <p style={{ "text-align": "center" }} class="title skill">
+                                        {name}
+                                    </p>
+                                </div>
+                            ))
+                        }
+
+                    </div>
 
 
 

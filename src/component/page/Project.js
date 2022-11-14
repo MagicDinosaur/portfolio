@@ -63,7 +63,7 @@ export default function Project() {
                         {useItem.overview && (
                             <div>
                                 <div className="divider portfolio-divider-1"></div>
-                                <h2>Overview</h2>
+                                <h2>Description</h2>
                                 <div id = "graph1" className="rich-text w-richtext"><p>{useItem.overview.description()}</p>
                                     {
                                         useItem.overview.image.map(item => (
