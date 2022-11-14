@@ -34,7 +34,7 @@ export const project = atom({
     },
         'Gooly': {
             'name': 'Gooly',
-            'position': '',
+            'position': 'Creator',
             'description': 'A google-based searching tool with automated data crawling from dynamic websites',
             'logo': 'https://i.imgur.com/14fQQIX.gif',
             'link': {
@@ -60,7 +60,7 @@ export const project = atom({
         },
         'MyMuse': {
             'name': 'MyMuse',
-            'position': '',
+            'position': 'Creator',
             'description': 'A memory web game allowing users to follow the pattern to gain, save score, login, register and update personal information. Won 1st prize against 43 other product competitors.',
             'logo': 'https://i.imgur.com/Ym7aquc.gif',
             'link': {
@@ -86,7 +86,7 @@ export const project = atom({
         },
         'Dyhac': {
             'name': 'Dyhac',
-            'position': '',
+            'position': 'Creator',
             'description': 'Conference-supporting platform, helping to enhance the connection between the speakers and their audience.',
             'logo': 'https://www.nicepng.com/png/full/126-1269636_conference-presentation-comments-presentation-icon-png.png',
             'link': {

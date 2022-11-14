@@ -51,6 +51,7 @@ export default function Home() {
                         <div className="split-content home-hero-right"><img
                             src="https://i.imgur.com/eZQCoTi.png" className="image home-hero" />
                             <i><p style ={{"font-size":"12px", "text-align":"center"}}>Oh! I also love Takoyaki and Taylor Swift</p></i>
+                            {/* <p style ={{"font-size":"12px", "text-align":"center"}}>Don't click here 🥺 you will drop my food</p> */}
                         </div>
                     </div>
                 </div>

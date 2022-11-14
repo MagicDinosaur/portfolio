@@ -78,7 +78,7 @@ export default function Project() {
                                 </div>
                             </div>
                         )}
-                        {useItem.result && (
+                        {/* {useItem.result && (
                             <div>
                                 <div className="divider portfolio-divider-2"></div>
                                 <h2>Tech stack</h2>
@@ -95,7 +95,7 @@ export default function Project() {
                                     </ul>
                                 </div>
                             </div>
-                        )}
+                        )} */}
                     </div>
                 </div>
             ) : (
