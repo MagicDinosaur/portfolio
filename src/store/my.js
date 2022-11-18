@@ -23,6 +23,7 @@ export const info = atom({
             'Redis': 'devicon-redis-plain colored',
             'Git': 'devicon-git-plain colored',
             'Docker': 'devicon-docker-plain colored',
+            
         }
     },
 });

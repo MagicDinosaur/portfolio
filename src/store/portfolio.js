@@ -3,6 +3,7 @@ import Gooly from './projects/gooly';
 import MyMuse from './projects/mymuse';
 import Dyhac from './projects/dyhac';
 import Attend from './projects/attend';
+import Chatt from './projects/chatt';
 export const project = atom({
     key: 'project',
     default: {        
@@ -83,7 +84,7 @@ export const project = atom({
 
                 ]
             }
-            
+
         },
         'Dyhac': {
             'name': 'Dyhac',
@@ -125,7 +126,7 @@ export const project = atom({
             'date': 'October 2021',
             'service': 'https://github.com/MagicDinosaur/Goooly',
             'type': 'Software','overview': {
-                'description': "Null",
+                'description': Chatt,
                 'image': [
                     '',
                 ]
@@ -133,7 +134,6 @@ export const project = atom({
             'result': {
                 'description': 'Python, Django, ReactJs, React Redux, MySQL, Docker, Git',
                 'list': [
-
                 ]
             }
         },
