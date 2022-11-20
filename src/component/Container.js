@@ -6,6 +6,7 @@ import Home from './page/Home'
 import Projects from './page/Projects'
 import Project from './page/Project'
 import NotFound from "./page/NotFound";
+import About from "./page/About";
 import ScrollToTop from "./ScrollToTop";
 
 export default function Container() {
@@ -60,7 +61,8 @@ export default function Container() {
                     <Home/>
                 </Route>
                 <Route path="/about">
-                    <NotFound/>
+                    {/* <NotFound/> */}
+                    <About/>
                 </Route>
             </Switch>
 
