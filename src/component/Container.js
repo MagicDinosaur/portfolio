@@ -61,8 +61,7 @@ export default function Container() {
                     <Home/>
                 </Route>
                 <Route path="/about">
-                    {/* <NotFound/> */}
-                    <About/>
+                    <NotFound/>
                 </Route>
             </Switch>
 
