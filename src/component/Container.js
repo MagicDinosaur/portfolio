@@ -14,15 +14,9 @@ MoreOutlined
 } from '@ant-design/icons';
 export default function Container() {
     const menu = (
-        <div 
-            style={{
-                width: "160%",
-                height: "100%",
-            
-            }}>
 
-        <Menu 
-   >
+
+        <Menu>
             <Menu.Item key="0">
                 <a href="/"
                     aria-current="page"
@@ -37,7 +31,7 @@ export default function Container() {
             </Menu.Item>
         </Menu>
 
-        </div>
+     
     );
     return (
         <div className="page-wrapper">
@@ -68,7 +62,8 @@ export default function Container() {
                         </nav>
                     </div>
                     <div className="split-content header-right">
-                   
+                        <div className="custom-dropdown">
+
                                     <Dropdown overlay={menu} trigger={['click']}>
                                         <a className="ant-dropdown-link" href="#">
                                              <MoreOutlined 
@@ -78,11 +73,10 @@ export default function Container() {
                                     }}/>
                                         </a>
                                     </Dropdown>
+
+
+                        </div>
                                     
-                                    {/* <div className="menu-line-top"></div>
-                                    <div className="menu-line-middle"></div>
-                                    <div className="menu-line-bottom"></div> */}
-                             
                             
                    
                     </div>
