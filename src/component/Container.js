@@ -8,18 +8,54 @@ import Project from './page/Project'
 import NotFound from "./page/NotFound";
 import About from "./page/About";
 import ScrollToTop from "./ScrollToTop";
-
+import { Menu, Dropdown } from 'antd';
+import {
+MoreOutlined
+} from '@ant-design/icons';
 export default function Container() {
+    const menu = (
+        <div 
+            style={{
+                width: "160%",
+                height: "100%",
+            
+            }}>
 
+        <Menu 
+   >
+            <Menu.Item key="0">
+                <a href="/"
+                    aria-current="page"
+                    className="nav-link w--current">Home</a>
+            </Menu.Item>
+            <Menu.Item key="1">
+                <Link to="/projects" className="nav-link">Projects</Link>
+            </Menu.Item>
+        
+            <Menu.Item key="3">
+                <Link to="/about" className="nav-link"> More Info</Link>
+            </Menu.Item>
+        </Menu>
+
+        </div>
+    );
     return (
         <div className="page-wrapper">
             <div data-collapse="medium" data-animation="default" data-duration="400"
                  data-w-id="58db7844-5919-d71b-dd74-2323ed8dffe9" data-easing="ease" data-easing2="ease" role="banner"
                  className="header w-nav"  >
                 <div className="container-header" >
-                    <div className="split-content header-left">
+                    <div className="split-content header-left"
+                style={{ display: "flex" }}
+                    >
+                        <h3
+                            style={{ marginTop: "10px" }}
+                        >Duc Pham</h3>
                         <nav role="navigation" className="nav-menu w-nav-menu">
                             <ul role="list" className="header-navigation">
+                                <li className="nav-item-wrapper"> 
+                        
+                                </li>
                                 <li className="nav-item-wrapper"><a href="/"
                                                                     aria-current="page"
                                                                     className="nav-link w--current">Home</a>
@@ -32,15 +68,23 @@ export default function Container() {
                         </nav>
                     </div>
                     <div className="split-content header-right">
-                        <div className="menu-button w-nav-button">
-                            <div className="menu-button-wrapper">
-                                <div className="menu-button-icon">
-                                    <div className="menu-line-top"></div>
+                   
+                                    <Dropdown overlay={menu} trigger={['click']}>
+                                        <a className="ant-dropdown-link" href="#">
+                                             <MoreOutlined 
+                                    style ={{
+                                        fontSize: "30px",
+                                        fontWeight: "bold",
+                                    }}/>
+                                        </a>
+                                    </Dropdown>
+                                    
+                                    {/* <div className="menu-line-top"></div>
                                     <div className="menu-line-middle"></div>
-                                    <div className="menu-line-bottom"></div>
-                                </div>
-                            </div>
-                        </div>
+                                    <div className="menu-line-bottom"></div> */}
+                             
+                            
+                   
                     </div>
                 </div>
                 <div className="container-default w-container">
