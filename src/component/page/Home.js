@@ -12,13 +12,69 @@ import { project as portfolioProject } from "../../store/portfolio";
 export default function Home() {
     const [useMyInfo, setMyInfo] = useRecoilState(myInfo);
     const [usePortfolioProject, setPortfolioProject] = useRecoilState(portfolioProject);
+    var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 1000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+    window.onload = function () {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+    }
     return (
         <div>
             <div className="section home-hero wf-section">
                 <div className="container-default w-container">
                     <div className="home-hero-wrapper">
                         <div className="split-content home-hero-left">
-                            <h1>Hello there, I am {useMyInfo.name}</h1>
+                            <h1>Hi, I am {useMyInfo.name} <br></br>
+                                <span
+                                    class="txt-rotate"
+                                    data-period="300"
+                                    data-rotate='["Entry-level Developer", "Machine Learning inquisitive", "Lowkey smart", "chill", "and fun!" ]'></span>
+                            </h1>
+                            <br></br>
                             <p >An aspiring computer science student inquisitive about
                                 the limitless world of technology. Having a firm understanding of programming languages, mathematics, machine learning terminology.
                                 Motivated to learn, grow and excel in the major.</p><br></br>

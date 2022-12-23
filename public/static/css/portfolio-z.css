@@ -213,6 +213,9 @@ th {
   padding: 0
 }
 
+.txt-rotate>.wrap {
+  border-right: 0.08em solid #666;
+}
 
 @font-face {
   font-family: 'webflow-icons';
