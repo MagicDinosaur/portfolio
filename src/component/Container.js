@@ -42,9 +42,14 @@ export default function Container() {
                     <div className="split-content header-left"
                 style={{ display: "flex" }}
                     >
-                        <h3
-                            style={{ marginTop: "10px" }}
-                        >Duc Pham</h3>
+                        <a href="/"
+                            aria-current="page"
+                            className="nav-link w--current">
+                            <h3
+                                style={{ marginTop: "10px" }}
+                            >Duc Pham </h3>
+                            </a>
+                  
                         <nav role="navigation" className="nav-menu w-nav-menu">
                             <ul role="list" className="header-navigation">
                                 <li className="nav-item-wrapper"> 
