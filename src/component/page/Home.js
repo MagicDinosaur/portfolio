@@ -68,10 +68,10 @@ export default function Home() {
             <div className="section home-hero wf-section">
                 <div className="container-default w-container">
                     <div className="home-hero-wrapper">
+                        <div className="split-content home-hero-left">
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <div className="split-content home-hero-left">
                                         <h1>Hi, I am {useMyInfo.name} <br></br></h1>
                                         <h1>
                                             <span
@@ -104,20 +104,20 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
                                 </div>}
                         </TrackVisibility>
+                                    </div>
+                        <div className="split-content home-hero-right">
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <div className="split-content home-hero-right">
-                                        <img src="https://i.imgur.com/12QbscD.png" className="imagehome-hero" />
+                                        <img src="https://i.imgur.com/12QbscD.png" className="image home-hero" />
                                         <i><p style={{ "font-size": "12px", "text-align": "center" }}>Oh! I also love Takoyaki and Taylor Swift</p></i>
                                         {/* <button style={{ "margin": "auto" }}>hello</button> */}
-                                    </div>
                                 </div>}
                         </TrackVisibility>
+                                    </div>
                     </div>
                 </div>
             </div>
