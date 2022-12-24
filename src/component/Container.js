@@ -1,7 +1,6 @@
-import {useRecoilState} from "recoil";
+
 import React, {useEffect} from "react";
 import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
-
 import Home from './page/Home'
 import Projects from './page/Projects'
 import Project from './page/Project'
@@ -12,6 +11,7 @@ import { Menu, Dropdown } from 'antd';
 import {
 MoreOutlined
 } from '@ant-design/icons';
+
 export default function Container() {
     const menu = (
 
@@ -105,7 +105,8 @@ export default function Container() {
                     <Home/>
                 </Route>
                 <Route path="/about">
-                    <NotFound/>
+                    {/* <NotFound/> */}
+                    <About/>
    
    
                 </Route>
