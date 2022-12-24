@@ -56,15 +56,17 @@
 
 .direction-l {
     position: relative;
-    width: 300px;
+    width: 350px;
     float: left;
     text-align: right;
+    right: 50px
 }
 
 .direction-r {
     position: relative;
-    width: 300px;
+    width: 350px;
     float: right;
+    left: 50px
 }
 
 .flag-wrapper {
@@ -278,11 +280,18 @@
 
 }
 
-@media screen and (min-width: 400px  ) {
+@media screen and (max-width: 660px) {
 
     .direction-l .desc,
     .direction-r .desc {
         margin: 1em 2em 0 2em;
+    }
+    .direction-l{
+        right: 0px;
+    }
+    .direction-r {
+        left: 0px;
+               
     }
 
 }
