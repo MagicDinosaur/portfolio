@@ -8,7 +8,8 @@ import {
 } from "react-router-dom";
 import { info as myInfo } from "../../store/my";
 import { project as portfolioProject } from "../../store/portfolio";
-
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 export default function Home() {
     const [useMyInfo, setMyInfo] = useRecoilState(myInfo);
     const [usePortfolioProject, setPortfolioProject] = useRecoilState(portfolioProject);
@@ -16,7 +17,7 @@ export default function Home() {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
-        this.period = parseInt(period, 10) || 1000;
+        this.period = parseInt(period, 10) || 2000;
         this.txt = '';
         this.tick();
         this.isDeleting = false;
@@ -67,48 +68,56 @@ export default function Home() {
             <div className="section home-hero wf-section">
                 <div className="container-default w-container">
                     <div className="home-hero-wrapper">
-                        <div className="split-content home-hero-left">
-                            <h1>Hi, I am {useMyInfo.name} <br></br>
-                                <span
-                                    class="txt-rotate"
-                                    data-period="300"
-                                    data-rotate='["Entry-level Developer", "Machine Learning inquisitive", "Lowkey smart", "chill", "and fun!" ]'></span>
-                            </h1>
-                            <br></br>
-                            <p >An aspiring computer science student inquisitive about
-                                the limitless world of technology. Having a firm understanding of programming languages, mathematics, machine learning terminology.
-                                Motivated to learn, grow and excel in the major.</p><br></br>
-                            <p>Thank you for coming to my page!</p><br></br>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                                    <div className="split-content home-hero-left">
+                                        <h1>Hi, I am {useMyInfo.name} <br></br></h1>
+                                        <h1>
+                                            <span
+                                                class="txt-rotate"
+                                                data-period="2000"
+                                                data-rotate='["Entry-level Developer", "Machine Learning inquisitive", "Lowkey smart", "chill", "and fun!" ]'></span>
+                                        </h1>
+                                        <p >An aspiring computer science student inquisitive about
+                                            the limitless world of technology. Having a firm understanding of programming languages, mathematics, machine learning terminology.
+                                            Motivated to learn, grow and excel in the major.</p><br></br>
+                                        <p>Thank you for coming to my page!</p><br></br>
 
-                            <div>
-                                <a href={useMyInfo.socialNetwork["LinkedIn"]}
-                                    className="link-primary w-inline-block">
-                                    <div className="link-primary-wrapper">
-                                        <div className="link-primary-text">Contact me on Linkedin
-                                            {useMyInfo.contactSocialNetwork}</div>
-                                        <div className="link-primary-text-arrow"><span
-                                            className="link-primary-arrow"></span>
+                                        <div>
+                                            <a href={useMyInfo.socialNetwork["LinkedIn"]}
+                                                className="link-primary w-inline-block">
+                                                <div className="link-primary-wrapper">
+                                                    <div className="link-primary-text">Contact me on Linkedin
+                                                        {useMyInfo.contactSocialNetwork}</div>
+                                                    <div className="link-primary-text-arrow"><span
+                                                        className="link-primary-arrow"></span>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div>
+                                            <div className="link-primary-wrapper">
+                                                <div className="link-primary-text"
+                                                    style={{ 'font-weight': 'normal', 'font-size': '80%' }}> This web site is written in React.Js. You can find source
+                                                    code of it in <a href="https://github.com/MagicDinosaur/portfolio"
+                                                        className="link-primary w-inline-block"><strong>here</strong></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </a></div>
-                            <div>
 
-                                <div className="link-primary-wrapper">
-                                    <div className="link-primary-text"
-                                        style={{ 'font-weight': 'normal', 'font-size': '80%' }}> This web site is written in React.Js. You can find source
-                                        code of it in <a href="https://github.com/MagicDinosaur/portfolio"
-                                            className="link-primary w-inline-block"><strong>here</strong></a>
+                                </div>}
+                        </TrackVisibility>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                                    <div className="split-content home-hero-right">
+                                        <img src="https://i.imgur.com/12QbscD.png" className="imagehome-hero" />
+                                        <i><p style={{ "font-size": "12px", "text-align": "center" }}>Oh! I also love Takoyaki and Taylor Swift</p></i>
+                                        {/* <button style={{ "margin": "auto" }}>hello</button> */}
                                     </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div className="split-content home-hero-right"><img
-                            src="https://i.imgur.com/eZQCoTi.png" className="image home-hero" />
-                            <i><p style ={{"font-size":"12px", "text-align":"center"}}>Oh! I also love Takoyaki and Taylor Swift</p></i>
-                            {/* <p style ={{"font-size":"12px", "text-align":"center"}}>Don't click here 🥺 you will drop my food</p> */}
-                        </div>
+                                </div>}
+                        </TrackVisibility>
                     </div>
                 </div>
             </div>
@@ -120,6 +129,7 @@ export default function Home() {
             <div className="container-default w-container">
                 <div className="divider"></div>
             </div>
+     
             <div className="section wf-section">
                 <div className="container-default w-container">
                     <div className="top-content portfolio-section">
