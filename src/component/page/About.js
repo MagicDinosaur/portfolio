@@ -11,7 +11,9 @@ export default function About() {
     const [usePortfolioAbout, setPortfolioAbout] = useRecoilState(portfolioAbout);
     const [show, setShow] = useState(true);
     const Work = () => {
+
         return (
+            
         <ul class="timeline">
             {Object.keys(usePortfolioAbout['work']).map(key => (
 
@@ -64,15 +66,38 @@ export default function About() {
     }
 
     return (
+
         <div className="container-default w-container" >
+            <script
+                src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+            </script>
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+            />
             <br></br>
             <h2
             style ={{
                 textAlign: "center",
             }}
             >About page</h2>
-            <p>
-                This is where you can find the infomation about my education and work experience, which is not available on my resume or my Linkedin. Thank you for coming
+            {/* <p
+                style={{
+                    textAlign: "center",
+                }}
+            > 
+        <br />.....
+    <br />  And I never saw you coming
+    <br />  And I never
+      <br />Being this happy
+        <br /> This is the stage of grace
+        <br />  This is the worthwild fight
+                <br /> This is the golden age of something good and right and real
+                <br /> ....
+       </p>
+              */}
+        <p>
+            This is where you can find more things about me, which is not available on my resume, my job application, or my Linkedin. Thank you for coming
             </p>
 
             <br/>
@@ -102,7 +127,7 @@ export default function About() {
             </div>
             <Divider/>
             {/* Additional file */}
-            <div className="addional-file"></div>
+            <div className="addional-file">
             <h4 style={{
                 textAlign: "left",
             }}> Additional Document</h4>
@@ -117,8 +142,39 @@ export default function About() {
                     width: "200px",
                      }} 
                         href="https://drive.google.com/file/d/11BWPAE-wbWtYtSHdM9cKmNLaTkvNtjFl/view?usp=sharing" 
-                        target="_blank">  Download my transcript</Button>
+                    target="_blank">  Download my transcript</Button></div>
             <br />
+      
+            <Divider/>
+            <br />
+           
+            <div className="github-stats">
+                <h4 style={{
+                    textAlign: "left",
+                }}> My github statistic so you don't have to search for it &#128537; </h4>
+            </div>
+        
+ 
+            <p>... and they are real-time captured. So if you don't see any statistical number, I might be passed away or quit SWE field   </p>
+            <br/>
+            <p align="center" >
+                <img width="90%" src="http://github-readme-streak-stats.herokuapp.com?user=MagicDinosaur&theme=onedark_duo" />
+                <p style={{
+                    "margin-top": "10px",
+                }}> <i>Streak statistic </i></p> 
+                <br/>
+                <img width="90%" src="https://ghchart.rshah.org/a0522d/MagicDinosaur" alt="MagicDinosaur's Github chart" />
+                <p style={{
+                    "margin-top": "10px",
+                }}><i>Year Contribution</i></p> 
+            </p>
+           
+            <br />
+            <br />
+            <br />
+            <br />
+
         </div>
+        
     );
 }

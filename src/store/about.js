@@ -38,7 +38,7 @@ export const about = atom({
                 'location': 'Atlanta, GA',
                 'degree': 'Bachelor of Science in Computer Science',
                 'logo': 'https://i.imgur.com/4Z7ZQ9M.png',
-                'description': 'I am currently pursuing a Bachelor of Science in Computer Science at Georgia State University. \
+                'description': 'I am currently pursuing a Bachelor of Science in Computer Science at Georgia State University, Honors College student. \
                                 Six time award winner of Student President\'s List. GPA: 4.17',
             },
             '2': {
@@ -47,7 +47,7 @@ export const about = atom({
                 'location': 'Remote',
                 'degree': 'Software Engineering Advanced Track',
                 'logo': 'https://i.imgur.com/4Z7ZQ9M.png',
-                'description': 'I was enrolled in CodePath\'s Software Engineering Advanced Track, a 16-week program about data structure and algorithms concept, soft skills'
+                'description': 'I was selected to enroll in CodePath\'s Software Engineering Advanced Track, a 16-week program about data structure and algorithms concept, soft skills'
             },
             '3' : {
                 'name': 'TRENDS center',
