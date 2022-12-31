@@ -6,8 +6,8 @@ import { useState } from "react";
 import TrackVisibility from 'react-on-screen';
 import { Divider, Button } from "antd";
 import { DownloadOutlined } from '@ant-design/icons';
+import Parser from 'html-react-parser';
 export default function About() {
-
     const [usePortfolioAbout, setPortfolioAbout] = useRecoilState(portfolioAbout);
     const [show, setShow] = useState(true);
     const Work = () => {
@@ -27,7 +27,7 @@ export default function About() {
 
                         <div class="desc">
                             <img className="img-timeline" src={usePortfolioAbout['work'][key]['logo']}></img>
-                            <p> {usePortfolioAbout['work'][key]['description']}  </p>
+                            <p> {Parser(usePortfolioAbout['work'][key]['description'])}  </p>
                         </div>
                     </div>
                 </li>
@@ -51,7 +51,7 @@ export default function About() {
 
                             <div class="desc">
                                 {/* <img className="img-timeline" src={usePortfolioAbout['work'][key]['logo']}></img> */}
-                                <p> {usePortfolioAbout['education'][key]['description']}  </p>
+                                <p> {Parser(usePortfolioAbout['education'][key]['description'])}  </p>
                             </div>
                         </div>
                     </li>

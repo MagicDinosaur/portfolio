@@ -10,7 +10,7 @@ export const about = atom({
             'time': 'Aug 2021 – Current',
             'location': 'Atlanta, GA',
             'logo': 'https://i.imgur.com/NCL5bHt.png',
-            'description': 'I am currently working (happily) as an undergraduate software engineering \
+            'description': 'I am currently working <b>(happily)</b> as an undergraduate software engineering \
                             assistant at Georgia State University in multiple projects',
             },
             '2': {
@@ -39,7 +39,7 @@ export const about = atom({
                 'degree': 'Bachelor of Science in Computer Science',
                 'logo': 'https://i.imgur.com/4Z7ZQ9M.png',
                 'description': 'I am currently pursuing a Bachelor of Science in Computer Science at Georgia State University, Honors College student. \
-                                Six time award winner of Student President\'s List. GPA: 4.17',
+                                <b>Six time</b> award winner of Student President\'s List. <b>GPA: 4.17</b>',
             },
             '2': {
                 'name': 'CodePath SWE 02 - 03',
@@ -66,7 +66,7 @@ export const about = atom({
                 'degree': 'Bachelor of Science in Computer Science',
                 'logo': 'https://i.imgur.com/4Z7ZQ9M.png',
                 'description': 'With an outstanding National High School Graduation Exam score \
-                (top 0.00035% over the whole country), I was admitted to HUST - Ranked 1st in the country school list, Computer Science major'
+                <b>(top 0.00035% over the whole country)</b>, I was admitted to HUST - Ranked <b>1st in the country school list</b>, Computer Science major'
             }
 
 
