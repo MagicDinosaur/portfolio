@@ -4,6 +4,7 @@ import MyMuse from './projects/mymuse';
 import Dyhac from './projects/dyhac';
 import Attend from './projects/attend';
 import Chatt from './projects/chatt';
+import Portfolio from './projects/portfolio';
 export const project = atom({
     key: 'project',
     default: {        
@@ -43,7 +44,7 @@ export const project = atom({
                 'url': 'https://gooly.phamvietduc.com/',
                 'git' : 'https://github.com/MagicDinosaur/Goooly',
             },
-            'date': 'October 2021',
+            'date': '2022',
             'service': 'https://github.com/MagicDinosaur/Goooly',
             'type': 'Software','overview': {
                 'description': Gooly,
@@ -69,8 +70,8 @@ export const project = atom({
                 'url': 'https://my-muse01.herokuapp.com/index.php',
                 'git' : 'https://github.com/MagicDinosaur/Mymuse',
             },
-            'date': 'October 2021',
-            'service': 'https://my-muse01.herokuapp.com/index.php',
+            'date': '2022',
+            'service':'https://my-muse01.herokuapp.com/index.php',
             'type': 'Software','overview': {
                 'description': MyMuse,
                 'image': [
@@ -86,6 +87,34 @@ export const project = atom({
             }
 
         },
+        'Portfolio': {
+            'name': 'If you are this far, you are already here',
+            'position': 'Creator',
+            'description': 'This portfolio website could be consisdered as a project of mine. Built with React, TailwindCSS, Framer Motion, and deployed on Netlify',
+            'logo': 'https://i.imgur.com/fBRXI1N.png',
+            'link': {
+                'text': 'View source',
+                'url': 'https://phamvietduc.com',
+                'git': 'https://github.com/MagicDinosaur/portfolio',
+            },
+            'date': '2023',
+            'service': '',
+            'type': 'Software', 'overview': {
+                'description': Portfolio,
+                'image': [
+                    '',
+
+                ]
+            },
+            'result': {
+                'description': 'PHP, HTML5, CSS, JavaScript, React, MySQL',
+                'list': [
+
+                ]
+            }
+
+        },
+
         'Dyhac': {
             'name': 'Dyhac',
             'position': 'Creator',
@@ -97,7 +126,7 @@ export const project = atom({
                 'git' : 'https://github.com/MagicDinosaur/Dyhac',
 
             },
-            'date': 'December 2021',
+            'date': '2021',
             'service': 'https://github.com/MagicDinosaur/Dyhac',
             'type': 'Software',
             'overview': {
@@ -137,6 +166,6 @@ export const project = atom({
                 ]
             }
         },
-
+       
     },
 });
