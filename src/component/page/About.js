@@ -1,7 +1,7 @@
 
-import {useRecoilState} from "recoil";
+import { useRecoilState } from "recoil";
 import './about.css';
-import { about as portfolioAbout} from "../../store/about";
+import { about as portfolioAbout } from "../../store/about";
 import { useState } from "react";
 import TrackVisibility from 'react-on-screen';
 import { Divider, Button } from "antd";
@@ -13,27 +13,27 @@ export default function About() {
     const Work = () => {
 
         return (
-            
-        <ul class="timeline">
-            {Object.keys(usePortfolioAbout['work']).map(key => (
 
-                <li>
-                    <div class={parseInt(key) % 2 == 0 ? "direction-r" : "direction-l"}  >
+            <ul class="timeline">
+                {Object.keys(usePortfolioAbout['work']).map(key => (
 
-                        <div class="flag-wrapper">
-                            <span class="flag">{usePortfolioAbout['work'][key]['company']}</span>
-                            <span class="time-wrapper"><span class="time">{usePortfolioAbout['work'][key]['time']}</span></span>
+                    <li>
+                        <div class={parseInt(key) % 2 == 0 ? "direction-r" : "direction-l"}  >
+
+                            <div class="flag-wrapper">
+                                <span class="flag">{usePortfolioAbout['work'][key]['company']}</span>
+                                <span class="time-wrapper"><span class="time">{usePortfolioAbout['work'][key]['time']}</span></span>
+                            </div>
+
+                            <div class="desc">
+                                <img className="img-timeline" src={usePortfolioAbout['work'][key]['logo']}></img>
+                                <p> {Parser(usePortfolioAbout['work'][key]['description'])}  </p>
+                            </div>
                         </div>
-
-                        <div class="desc">
-                            <img className="img-timeline" src={usePortfolioAbout['work'][key]['logo']}></img>
-                            <p> {Parser(usePortfolioAbout['work'][key]['description'])}  </p>
-                        </div>
-                    </div>
-                </li>
-            ))
-            }
-        </ul>
+                    </li>
+                ))
+                }
+            </ul>
         )
     }
     const Education = () => {
@@ -61,7 +61,7 @@ export default function About() {
         )
     }
 
-    const handleTimeLine =(e) => {
+    const handleTimeLine = (e) => {
         setShow(!show);
     }
 
@@ -154,27 +154,43 @@ export default function About() {
                 }}> My github statistic so you don't have to search for it &#128537; </h4>
             </div>
         
- 
             <p>... and they are real-time captured. So if you don't see any statistical number, I might be passed away or quit SWE field   </p>
             <br/>
-            <p align="center" >
-                <img width="90%" src="http://github-readme-streak-stats.herokuapp.com?user=MagicDinosaur&theme=onedark_duo" />
+            
+            < div style={{
+   
+            }}>
                 <p style={{
-                    "margin-top": "10px",
-                }}> <i>Streak statistic </i></p> 
+                    textAlign: "left",
+                    "padding": "15px 0px 15px 0px",
+                }}> Streak statistic</p>
+                <img width="90%" align="center"  src="http://github-readme-streak-stats.herokuapp.com?user=MagicDinosaur&theme=onedark_duo" />
                 <br/>
-                <img width="90%" src="https://ghchart.rshah.org/a0522d/MagicDinosaur" alt="MagicDinosaur's Github chart" />
                 <p style={{
-                    "margin-top": "10px",
-                }}><i>Year Contribution</i></p> 
-            </p>
+                    textAlign: "left",
+                    "padding": "15px 0px 15px 0px",
+                }}> Year Contribution</p>
+                <img  
+                
+                style={{
+
+                    "width" : "90%",
+                     "align": "right"  ,
+                    "border": "2px solid #040a133f",
+                    "border-radius": "5px",
+                     "padding" : "15px",
+                }}
+                
+                
+                src="https://grass-graph.appspot.com/images/MagicDinosaur.png" alt="MagicDinosaur's Github chart" />
+            </div >
            
             <br />
             <br />
             <br />
             <br />
 
-        </div>
+        </div >
         
     );
 }
