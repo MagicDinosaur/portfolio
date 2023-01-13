@@ -190,7 +190,7 @@ export default function About() {
             <div className="addional-file">
                 <h4 style={{
                     textAlign: "left",
-                }}> Here is something fun I made (regurally updated)</h4>
+                }}> Here is something fun I made (regularly updated)</h4>
                 <h5> Instagram bot </h5>
                 <p> Thank you for going up to here. Before we say goodbye, here is lastest fun thing that I made.<br></br>
                     I have a close friend whose name is Zulinh. She is so kind and good to me. However, she is well known as a technology killer. Her poor little 15-inch laptop had to suffer several bear attacks from her (water accident, dropping from bed, casually sitting on it, etc...) 
