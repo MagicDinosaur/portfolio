@@ -126,6 +126,9 @@ export default function About() {
                 </TrackVisibility>
             </div>
             <Divider/>
+          
+
+
             {/* Additional file */}
             <div className="addional-file">
             <h4 style={{
@@ -176,15 +179,51 @@ export default function About() {
 
                     "width" : "90%",
                      "align": "right"  ,
-                    "border": "2px solid #040a133f",
-                    "border-radius": "5px",
-                     "padding" : "15px",
+         
                 }}
                 
                 
                 src="https://grass-graph.appspot.com/images/MagicDinosaur.png" alt="MagicDinosaur's Github chart" />
             </div >
-           
+            <Divider />
+            {/*Fun things i made */}
+            <div className="addional-file">
+                <h4 style={{
+                    textAlign: "left",
+                }}> Here is something fun I made (regurally updated)</h4>
+                <h5> Instagram bot </h5>
+                <p> Thank you for going up to here. Before we say goodbye, here is lastest fun thing that I made.<br></br>
+                    I have a close friend whose name is Zulinh. She is so kind and good to me. However, she is well known as a technology killer. Her poor little 15-inch laptop had to suffer several bear attacks from her (water acident, dropping from bed, casually sitting on it, etc...) before it was completely broken last week. I am not kidding. She just bought a new laptop last Saturday, so to encourage the computer to survive happily, I made a bot to count how many days it has been living.
+                    
+                    <br />
+                    The bot is running on Google Functions, triggered by Google Cloud Scheduler. You can see the design below:
+                
+                </p>
+                <img
+
+                    style={{
+
+                        "width": "90%",
+                        "align": "center",
+                        "padding-top"   : "15px",
+                    }}
+                    src="https://i.imgur.com/G331SAM.png" alt="" />
+                    
+                <br />
+                The Instagram account is @did_zulinh_break_laptop_today. You could check it out. &#128064;. Pretty fun hah? My friend love it so much, and I hope you will love it too 
+                <img
+
+                    style={{
+
+                        "width": "90%",
+                        "align": "center",
+                        "padding-top": "15px",
+                    }}
+                    src="https://i.imgur.com/hQdpVlF.png" alt="" />
+              
+            </div>
+            <br />
+            
             <br />
             <br />
             <br />
