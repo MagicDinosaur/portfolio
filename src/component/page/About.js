@@ -193,7 +193,8 @@ export default function About() {
                 }}> Here is something fun I made (regurally updated)</h4>
                 <h5> Instagram bot </h5>
                 <p> Thank you for going up to here. Before we say goodbye, here is lastest fun thing that I made.<br></br>
-                    I have a close friend whose name is Zulinh. She is so kind and good to me. However, she is well known as a technology killer. Her poor little 15-inch laptop had to suffer several bear attacks from her (water acident, dropping from bed, casually sitting on it, etc...) before it was completely broken last week. I am not kidding. She just bought a new laptop last Saturday, so to encourage the computer to survive happily, I made a bot to count how many days it has been living.
+                    I have a close friend whose name is Zulinh. She is so kind and good to me. However, she is well known as a technology killer. Her poor little 15-inch laptop had to suffer several bear attacks from her (water accident, dropping from bed, casually sitting on it, etc...) 
+                    before it was completely broken last week. I am not kidding. She just bought a new laptop last Saturday, so to encourage the computer to survive happily, I made a bot to count how many days it has been living.
                     
                     <br />
                     The bot is running on Google Functions, triggered by Google Cloud Scheduler. You can see the design below:
