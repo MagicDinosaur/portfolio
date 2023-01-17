@@ -208,7 +208,7 @@ export default function About() {
                         "align": "center",
                         "padding-top"   : "15px",
                     }}
-                    src="https://i.imgur.com/G331SAM.png" alt="" />
+                    src="https://i.imgur.com/j3IAtW0.png" alt="" />
                     
                 <br />
                 The Instagram account is @did_zulinh_break_laptop_today. You could check it out. &#128064;. Pretty fun hah? My friend love it so much, and I hope you will love it too 
