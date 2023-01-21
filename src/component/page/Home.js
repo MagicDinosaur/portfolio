@@ -82,8 +82,6 @@ export default function Home() {
                                         <p >An aspiring computer science student inquisitive about
                                             the limitless world of technology. Having a firm understanding of programming languages, mathematics, machine learning terminology.
                                             Motivated to learn, grow and excel in the major.</p><br></br>
-                                        <p>Thank you for coming to my page! And if you are here now, Happy new year!! &#127882; &#127881;</p><br></br>
-
                                         <div>
                                             <a href={useMyInfo.socialNetwork["LinkedIn"]}
                                                 className="link-primary w-inline-block">
