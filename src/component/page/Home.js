@@ -74,13 +74,13 @@ export default function Home() {
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                         <h1>Hi, I am {useMyInfo.name} <br></br></h1>
                                         <h1>
-                                            <span
+                                             <span
                                                 class="txt-rotate"
                                                 data-period="2000"
-                                                data-rotate='["Entry-level Developer", "Machine Learning inquisitive", "Lowkey smart", "chill", "and fun!" ]'></span>
+                                                data-rotate='["an entry-level SWE", "AI inquisitive"]'></span> &nbsp;
                                         </h1>
                                         <p >An aspiring computer science student inquisitive about
-                                            the limitless world of technology. Having a firm understanding of programming languages, mathematics, machine learning terminology.
+                                            the limitless world of technology. Having a firm understanding of programming languages, networking, and data-related mysthics.
                                             Motivated to learn, grow and excel in the major.</p><br></br>
                                         <div>
                                             <a href={useMyInfo.socialNetwork["LinkedIn"]}
@@ -117,6 +117,7 @@ export default function Home() {
                         </TrackVisibility>
                                     </div>
                     </div>
+              
                 </div>
             </div>
 
@@ -124,9 +125,7 @@ export default function Home() {
                 <div className="divider"></div>
             </div>
 
-            <div className="container-default w-container">
-                <div className="divider"></div>
-            </div>
+     
      
             <div className="section wf-section">
                 <div className="container-default w-container">
@@ -166,6 +165,9 @@ export default function Home() {
                                 ))
                             }
                         </div>
+                        <br/>
+                        <p style={{ "color": "#c17d0c","font-weight": "bold" }}>Hi there! Today is 14th Feb 2023. I am currently working on a child charity project (Delunch) and I am pretty pround about it, 
+                            please check it out in here! </p>
 
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import MyMuse from './projects/mymuse';
 import Dyhac from './projects/dyhac';
 import Attend from './projects/attend';
 import Chatt from './projects/chatt';
+import Delunch from './projects/delunch';
 import Portfolio from './projects/portfolio';
 export const project = atom({
     key: 'project',
@@ -34,6 +35,32 @@ export const project = atom({
             ]
         }
     },
+            'Delunch': {
+            'name': 'Delunch',
+            'position': 'Creator',
+                'description': "A child charity project that aims to provide daily meals to mountainous area childrens for 9 months, costing only $0.5per meal." 
+                           ,
+
+            'logo': 'https://media.tenor.com/GffrCVkd4JkAAAAi/peach-and.gif',
+            'link': {
+                'text': 'I will update the source code soon!!',
+                'url': '',
+                'git': '',
+            },
+            'date': '2023',
+            'service': 'https://github.com/MagicDinosaur/Goooly',
+            'type': 'Software', 'overview': {
+                'description': Delunch,
+                'image': [
+                    '',
+                ]
+            },
+            'result': {
+                'description': 'Python Flask, ReactJs, MySQL, Kafka, Flink, Google Cloud, Docker, Git',
+                'list': [
+                ]
+            }
+        },
         'Gooly': {
             'name': 'Gooly',
             'position': 'Creator',
@@ -114,7 +141,6 @@ export const project = atom({
             }
 
         },
-
         'Dyhac': {
             'name': 'Dyhac',
             'position': 'Creator',
@@ -166,6 +192,6 @@ export const project = atom({
                 ]
             }
         },
-       
+
     },
 });

@@ -15,15 +15,14 @@ export const info = atom({
             'Java': 'devicon-java-plain colored',
             'Go': 'devicon-go-plain colored',
             'React': 'devicon-react-original colored',
-            'HTML': 'devicon-html5-plain colored',
-            'CSS': 'devicon-css3-plain colored',
+            'Kafka': 'devicon-apachekafka-original-wordmark colored',
+            'GCP': 'devicon-googlecloud-plain-wordmark colored',
             'JavaScript': 'devicon-javascript-plain colored',
             'MySQL': 'devicon-mysql-plain colored',
             'MongoDB': 'devicon-mongodb-plain colored',
             'Redis': 'devicon-redis-plain colored',
             'Git': 'devicon-git-plain colored',
             'Docker': 'devicon-docker-plain colored',
-            
         }
     },
 });
