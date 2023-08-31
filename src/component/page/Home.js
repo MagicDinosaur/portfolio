@@ -80,7 +80,7 @@ export default function Home() {
                                                 data-rotate='["an entry-level SWE", "AI inquisitive"]'></span> &nbsp;
                                         </h1>
                                         <p >An aspiring computer science student inquisitive about
-                                            the limitless world of technology. Having a firm understanding of programming languages, networking, and data-related mysthics.
+                                            the limitless world of technology. Having a firm understanding of programming languages, networking, automation, and data-related mysthics.
                                             Motivated to learn, grow and excel in the major.</p><br></br>
                                         <div>
                                             <a href={useMyInfo.socialNetwork["LinkedIn"]}
@@ -166,8 +166,6 @@ export default function Home() {
                             }
                         </div>
                         <br/>
-                        <p style={{ "color": "#c17d0c","font-weight": "bold" }}>Hi there! Today is 14th Feb 2023. I am currently working on a child charity project (Delunch) and I am pretty pround about it, 
-                            please check it out in here! </p>
 
                     </div>
                 </div>
