@@ -8,11 +8,30 @@
     height: 3em;
     margin-right: 10px;
     opacity: 0.7;
-
+    object-fit: cover; 
 }
+.grad-headline{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(232, 125, 136);
+   
+    
+}
+
 .desc{
     display: flex;
 }
+
+.desc-1{
+    display: flex;
+    padding-top: 15px;
+    gap: 10px;
+    width: 90%;
+}
+
 .timeline {
     position: relative;
     width: 660px;

@@ -14,22 +14,37 @@ export default function About() {
 
         return (
 
-            <ul class="timeline">
+            <ul style={{ "list-style": "none"}}>
                 {Object.keys(usePortfolioAbout['work']).map(key => (
 
                     <li>
-                        <div class={parseInt(key) % 2 == 0 ? "direction-r" : "direction-l"}  >
+                        {/* <div class={parseInt(key) % 2 == 0 ? "direction-r" : "direction-l"}  >
 
                             <div class="flag-wrapper">
                                 <span class="flag">{usePortfolioAbout['work'][key]['company']}</span>
-                                <span class="time-wrapper"><span class="time">{usePortfolioAbout['work'][key]['time']}</span></span>
+                                
+                                <span class="time-wrapper" ><span class="time">{usePortfolioAbout['work'][key]['time']}</span></span>
                             </div>
 
                             <div class="desc">
                                 <img className="img-timeline" src={usePortfolioAbout['work'][key]['logo']}></img>
                                 <p> {Parser(usePortfolioAbout['work'][key]['description'])}  </p>
                             </div>
-                        </div>
+
+                           
+                        </div> */}
+                          
+                          
+                            <div class="desc-1">
+                                <img className="img-timeline" src={usePortfolioAbout['work'][key]['logo']}></img>
+                                <div >
+                                <span class="flag">{usePortfolioAbout['work'][key]['company']} </span> <br/>
+                                {usePortfolioAbout['work'][key]['name']} 
+                                <p >{usePortfolioAbout['work'][key]['time']}</p>
+                                <p> {Parser(usePortfolioAbout['work'][key]['description'])}  </p>
+                            </div>
+                            </div>
+                            
                     </li>
                 ))
                 }
@@ -38,6 +53,8 @@ export default function About() {
     }
     const Education = () => {
         return (
+            <>
+            <div className="grad-headline">Hurrayyy!! I just graduated on Dec 2023 with GPA: 3.9/4.0 – Top 1% Computer Science Student graduated with The Highest Distinction– Summa Cum Laude</div>
             <ul class="timeline">
                 {Object.keys(usePortfolioAbout['education']).map(key => (
 
@@ -50,7 +67,7 @@ export default function About() {
                             </div>
 
                             <div class="desc">
-                                {/* <img className="img-timeline" src={usePortfolioAbout['work'][key]['logo']}></img> */}
+                           
                                 <p> {Parser(usePortfolioAbout['education'][key]['description'])}  </p>
                             </div>
                         </div>
@@ -58,6 +75,7 @@ export default function About() {
                 ))
                 }
             </ul>
+            </>
         )
     }
 
