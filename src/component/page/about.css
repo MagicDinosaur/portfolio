@@ -1,4 +1,3 @@
-
 /* ================ The Timeline ================ */
 .about-page{
     text-align: center;
@@ -330,4 +329,41 @@
                
     }
 
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.w-dyn-item {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card.portfolio-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card.portfolio-project .image-wrapper {
+    flex: 1;
+}
+
+.card.portfolio-project .title,
+.card.portfolio-project p {
+    margin: 10px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 660px) {
+    .w-dyn-item {
+        flex: 1 1 100%; /* One item per row on smaller screens */
+    }
 }

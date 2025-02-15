@@ -10,6 +10,7 @@ export const project = atom({
     key: 'project',
     default: {        
         'Attendance System': {
+        'status' : 1,
         'name': 'Attendance System',
         'position': 'Team Leader',
         'description': 'A realtime seat selection web application for students across the school. ',
@@ -35,7 +36,8 @@ export const project = atom({
             ]
         }
     },
-            'Delunch': {
+        'Delunch': {
+            'status' : 1,
             'name': 'Delunch',
             'position': 'Creator',
                 'description': "A child charity project that aims to provide daily meals to mountainous area childrens for 9 months, costing only $0.5per meal." 
@@ -62,6 +64,7 @@ export const project = atom({
             }
         },
         'Gooly': {
+            'status' : 1,
             'name': 'Gooly',
             'position': 'Creator',
             'description': 'A google-based searching tool with automated data crawling from dynamic websites',
@@ -88,6 +91,7 @@ export const project = atom({
             }
         },
         'MyMuse': {
+            'status' : 1,
             'name': 'MyMuse',
             'position': 'Creator',
             'description': 'A memory web game allowing users to follow the pattern to gain, save score, login, register and update personal information. Won 1st prize against 43 other product competitors.',
@@ -115,6 +119,7 @@ export const project = atom({
 
         },
         'Portfolio': {
+            'status' : 0,
             'name': 'If you are this far, you are already here',
             'position': 'Creator',
             'description': 'This portfolio website could be consisdered as a project of mine. Built with React, TailwindCSS, Framer Motion, and deployed on Netlify',
@@ -142,6 +147,7 @@ export const project = atom({
 
         },
         'Dyhac': {
+            'status' : 0,
             'name': 'Dyhac',
             'position': 'Creator',
             'description': 'Conference-supporting platform, helping to enhance the connection between the speakers and their audience.',
@@ -169,6 +175,7 @@ export const project = atom({
             }
         },
         'Chatt': {
+            'status' : 0,
             'name': 'Chatt',
             'position': '',
             'description': 'A real time chat web application using Django serving a REST API with React as the front-end, encapsulated with Docker',
