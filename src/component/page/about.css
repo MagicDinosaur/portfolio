@@ -2,13 +2,14 @@
 .about-page{
     text-align: center;
 }
-.img-timeline{
+.img-timeline {
     width: 3em;
     height: 3em;
     margin-right: 10px;
     opacity: 0.7;
-    object-fit: cover; 
+    object-fit: contain; 
 }
+
 .grad-headline{
     width: 80%;
     margin: 0 auto;
