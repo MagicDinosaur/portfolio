@@ -4,7 +4,18 @@ export const about = atom({
     key: 'about',
     default: {
         'work': {
-            '1': {
+            5: {
+                'name': 'System Software Engineering 1',
+                'company': 'Knapp Inc North America',
+                'time': 'March 2024 – Present',
+                'location': 'Kennesaw, GA',
+                'logo': 'https://imgur.com/7Myx0C2.png',
+                'description': " The experience feels refreshingly different here. \
+                It’s like returning to my roots—diving deep into core programming languages like Python, Java, and C++, alongside Oracle’s ecosystem.\
+                And amidst all the problem-solving and innovation, I find joy in the little things—debugging mysteries, automating the mundane, and yes, sharing a good laugh along the way.\  "
+                ,
+            },
+            4: {
                 'name': 'Software Engineering Coop - NetDevOps',
                 'company': 'Cox Communications',
                 'time': 'Aug 2023 – Dec 2023',
@@ -13,7 +24,7 @@ export const about = atom({
                 'description': "I got 4 months full of experience in a real-world software engineering environment, working with a team of engineers in building automation infrastructure with daily task, following Agile methodology. \  "
                 ,
             },
-            '2': {
+            3: {
                 'name': 'Devops/Software Engineering Intern',
                 'company': 'American Eagle Outfitters',
                 'time': 'June 2023 - Aug 2023',
@@ -23,7 +34,7 @@ export const about = atom({
                  And this time, I tried to be a DevOps Engineer with a whole new skill set. This job has significantly enriched my experience, \
                  marking a new chapter in my career of professional growth in a dynamic environment.",
             },
-            '3': {
+            2: {
                 'name': 'Undergraduate Software Engineering Assistant',
                 'company': 'GSU Department of CompSci',
                 'time': 'Aug 2021 – Mar 2023',
@@ -32,7 +43,7 @@ export const about = atom({
                 'description': "I was working <b>(happily)</b> as an undergraduate software engineering \
                             assistant at Georgia State University, contributing to diverse projects that spanned a spectrum of fields, ranging from the realms of Machine Learning to the dynamic landscape of Web Development.",
             },
-            '4': {
+            1: {
                 'name': 'Software Teaching Assistant',
                 'company': 'Open-Commerce Group',
                 'time': 'May 2021 – Aug 2021',
@@ -41,7 +52,7 @@ export const about = atom({
                 'description': 'I gained a big leap in SWE, soft skills, and connection with 3 hustle yet motivating months working in here.\
                                 Worked fulltime in daytime, studied GSU\'s classes remotely at night, still killed them both with a smile on my face.',
             },
-            '5': {
+            0: {
                 'name': 'Software Engineering Intern',
                 'company': 'Samo Tech',
                 'time': 'Jan 2020 – Aug 2020',

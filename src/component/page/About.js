@@ -46,7 +46,7 @@ export default function About() {
                                     <span className="time-wrapper"><span className="time">{usePortfolioAbout['education'][key]['time']}</span></span>
                                 </div>
                                 <div className="desc">
-                                    <p>{Parser(usePortfolioAbout['education'][key]['description'])}</p>
+                                     <p>{Parser(usePortfolioAbout['education'][key]['description'])}</p>
                                 </div>
                             </div>
                         </li>
