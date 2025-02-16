@@ -9,7 +9,7 @@ import Parser from 'html-react-parser';
 
 export default function About() {
     const [usePortfolioAbout, setPortfolioAbout] = useRecoilState(portfolioAbout);
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState('work'); 
 
     const Work = () => {
         return (
@@ -56,8 +56,8 @@ export default function About() {
         );
     };
 
-    const handleTimeLine = () => {
-        setShow(!show);
+    const handleTimeLine = (section) => {
+        setShow(section);
     };
 
     return (
@@ -74,14 +74,14 @@ export default function About() {
                 <p> My journey in education and professional work could be seen below</p>
                 <br />
                 <div className="about-timeline-work nav">
-                    <button className="about-timeline-work button" onClick={handleTimeLine}> Work </button>
-                    <button className="about-timeline-work button" onClick={handleTimeLine}> Education </button>
+                    <button className="about-timeline-work button" onClick={() => handleTimeLine('work')}> Work </button>
+                    <button className="about-timeline-work button" onClick={() => handleTimeLine('education')}> Education </button>
                 </div>
                 <div className="divider" style={{ width: '80%', margin: 'auto' }}></div>
                 <TrackVisibility>
                     {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                            {show ? <Work /> : <Education />}
+                            {show === 'work' ? <Work /> : <Education />}
                         </div>
                     }
                 </TrackVisibility>
